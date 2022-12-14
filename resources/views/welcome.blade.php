@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        @vite('resources/css/app.css')
         <title>Laravel</title>
 
         <!-- Fonts -->
@@ -21,6 +21,16 @@
         </style>
     </head>
     <body class="antialiased">
+        <header>    <nav class="bg-zinc-700">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-10 items-center justify-between">
+                    <a href="/welcome" class="bg-green-400 text-black-900 hover:text-blue-800 px-3 py-2 ml-10 rounded-md text-sm font-medium ">laravel</a>
+                    <a href="/" class="bg-green-400 text-black-900 hover:text-blue-800 px-3 py-2 rounded-md text-sm font-medium">Главная</a>
+                    <a href="/authorization" class="bg-green-400 text-black-900 hover:text-blue-800 px-3 py-2 mr-10 rounded-md text-sm font-medium">Вход</a>
+                </div>
+            </div>
+        </nav>
+        </header>
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
